@@ -1,0 +1,20 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname 3.2.1) (read-case-sensitive #t) (teachpacks ((lib "convert.rkt" "teachpack" "htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "convert.rkt" "teachpack" "htdp")))))
+(define orig-prize 5.0)
+(define rate 150)
+(define orig-num 120)
+(define cost-rate 0.04)
+(define cost-for-movie 180)
+
+(define (attendees ticket-prize)
+  (+ (* (- orig-prize ticket-prize) rate) orig-num))
+(attendees 5)
+(attendees 4)
+(attendees 3)
+(define (cost ticket-prize)
+  (+ (* cost-rate (attendees ticket-prize)) cost-for-movie))
+(define (revenue ticket-prize)
+  (* (attendees ticket-prize) ticket-prize))
+(define (profit ticket-prize)
+  (- (revenue ticket-prize) (cost ticket-prize)))
