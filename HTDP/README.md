@@ -1,4 +1,4 @@
-# algs4_solution
-problem solution for algs4
+# HTDP_solution
+problem solution for HTDP
 
-http://algs4.cs.princeton.edu/home/
+http://htdp.org/
