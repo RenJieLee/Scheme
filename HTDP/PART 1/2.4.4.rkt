@@ -3,5 +3,5 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname 2.4.4) (read-case-sensitive #t) (teachpacks ((lib "convert.rkt" "teachpack" "htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "convert.rkt" "teachpack" "htdp")))))
 (define (somef x)
   (sin x x))
-(somef 10 20)
+;(somef 10 20)
 (somef 10)
