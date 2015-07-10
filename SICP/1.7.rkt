@@ -15,4 +15,4 @@
   (* guess guess))
 (define (mine-sqrt x)
   (sqrt-iter 1.0 x))
-(mine-sqrt 9)
+(mine-sqrt 0.00009)
